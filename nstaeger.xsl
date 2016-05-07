@@ -2010,7 +2010,6 @@
         <xsl:call-template name ="templ_prop_SecondaryOpen"/>
         <xsl:call-template name ="templ_str_OnlineCap"/>
         <xsl:call-template name ="templ_prop_SecondaryClose"/>
-        <xsl:call-template name ="templ_prop_Dot"/>
         <xsl:call-template name ="templ_prop_Space"/>
     </xsl:template>
 
@@ -4468,7 +4467,7 @@
                             <xsl:when test="$cAuthors=0">
                                 <xsl:choose>
                                     <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:call-template name ="templ_prop_Dot"/>
@@ -4478,7 +4477,7 @@
                             <xsl:otherwise>
                                 <xsl:choose>
                                     <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:call-template name ="templ_prop_Dot"/>
@@ -4561,7 +4560,7 @@
                                 <xsl:when test="$cAuthors=0">
                                     <xsl:choose>
                                         <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                            <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                            <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:call-template name ="templ_prop_Dot"/>
@@ -4571,7 +4570,7 @@
                                 <xsl:otherwise>
                                     <xsl:choose>
                                         <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                            <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                            <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:call-template name ="templ_prop_Dot"/>
@@ -4666,11 +4665,12 @@
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
+
                 <xsl:choose>
                     <xsl:when test="$cAuthors=0">
                         <xsl:choose>
                             <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                <xsl:call-template name ="templ_prop_EnumSeparator"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name ="templ_prop_Dot"/>
@@ -4680,7 +4680,7 @@
                     <xsl:otherwise>
                         <xsl:choose>
                             <xsl:when test="$cTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                <xsl:call-template name ="templ_prop_EnumSeparator"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name ="templ_prop_Dot"/>
@@ -4753,7 +4753,7 @@
                             <xsl:when test="$cAuthors=0">
                                 <xsl:choose>
                                     <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:call-template name ="templ_prop_Dot"/>
@@ -4763,7 +4763,7 @@
                             <xsl:otherwise>
                                 <xsl:choose>
                                     <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:call-template name ="templ_prop_Dot"/>
@@ -4846,7 +4846,7 @@
                                 <xsl:when test="$cAuthors=0">
                                     <xsl:choose>
                                         <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                            <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                            <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:call-template name ="templ_prop_Dot"/>
@@ -4856,7 +4856,7 @@
                                 <xsl:otherwise>
                                     <xsl:choose>
                                         <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                            <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                            <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:call-template name ="templ_prop_Dot"/>
@@ -4955,7 +4955,7 @@
                     <xsl:when test="$cAuthors=0">
                         <xsl:choose>
                             <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                <xsl:call-template name ="templ_prop_EnumSeparator"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name ="templ_prop_Dot"/>
@@ -4965,7 +4965,7 @@
                     <xsl:otherwise>
                         <xsl:choose>
                             <xsl:when test="$cTitle!=0 or $cBookTitle!=0 or $cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                                <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                <xsl:call-template name ="templ_prop_EnumSeparator"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name ="templ_prop_Dot"/>
@@ -5081,7 +5081,7 @@
                             <xsl:value-of select="b:Last"/>
                             <xsl:choose>
                                 <xsl:when test="$cTitle!=0 or $cProductionCompany!=0 or $cYear!=0">
-                                    <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                    <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:call-template name ="templ_prop_Dot"/>
@@ -5176,7 +5176,7 @@
                 </xsl:for-each>
                 <xsl:choose>
                     <xsl:when test="$cTitle!=0 or $cProductionCompany!=0 or $cYear!=0">
-                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:call-template name ="templ_prop_Dot"/>
@@ -5940,69 +5940,6 @@
         </xsl:choose>
     </xsl:template>
 
-
-
-    <xsl:template name="BibDisplayTitleBook">
-        <xsl:variable name="cTitle">
-            <xsl:value-of select="count(b:Title)"/>
-        </xsl:variable>
-        <xsl:variable name="cEdition">
-            <xsl:value-of select ="count(b:Edition)"/>
-        </xsl:variable>
-        <xsl:variable name="cVolume">
-            <xsl:value-of select ="count(b:Volume)"/>
-        </xsl:variable>
-        <xsl:variable name="cEditor">
-            <xsl:value-of select="count(b:Author/b:Editor/b:NameList/b:Person)" />
-        </xsl:variable>
-        <xsl:variable name="cAuthor">
-            <xsl:value-of select="count(b:Author/b:Author/b:NameList/b:Person)" />
-        </xsl:variable>
-        <xsl:variable name="cCity">
-            <xsl:value-of select ="count(b:City)"/>
-        </xsl:variable>
-        <xsl:variable name="cStateProvince">
-            <xsl:value-of select ="count(b:StateProvince)"/>
-        </xsl:variable>
-        <xsl:variable name="cPublisher">
-            <xsl:value-of select ="count(b:Publisher)"/>
-        </xsl:variable>
-        <xsl:variable name="cYear">
-            <xsl:value-of select ="count(b:Year)"/>
-        </xsl:variable>
-        <xsl:variable name="cPages">
-            <xsl:value-of select ="count(b:Pages)"/>
-        </xsl:variable>
-
-        <xsl:if test ="$cTitle!=0">
-            <xsl:call-template name="right-trim">
-                <xsl:with-param name ="s" select="b:Title"/>
-            </xsl:call-template>
-            <xsl:choose>
-                <xsl:when test="$cAuthor=0">
-                    <xsl:choose>
-                        <xsl:when test="$cEdition!=0 or $cVolume!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                            <xsl:call-template name ="templ_prop_ListSeparator"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:call-template name ="templ_prop_Dot"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:choose>
-                        <xsl:when test="$cEdition!=0 or $cVolume!=0 or $cEditor!=0 or $cCity!=0 or $cStateProvince!=0 or $cPublisher!=0 or $cYear!=0 or $cPages!=0">
-                            <xsl:call-template name ="templ_prop_ListSeparator"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:call-template name ="templ_prop_Dot"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:if>
-    </xsl:template>
-
     <xsl:template name="BibDisplayTitle">
         <xsl:variable name="cTitle">
             <xsl:value-of select="count(b:Title)"/>
@@ -6028,7 +5965,6 @@
             <xsl:call-template name ="templ_prop_Space"/>
         </xsl:if>
     </xsl:template>
-
 
     <xsl:template name="BibDisplayYearSoundrecording">
         <xsl:variable name="cYear">
@@ -6982,6 +6918,7 @@
                                     <xsl:with-param name="stringReplacement" select="$prop_Space"/>
                                 </xsl:call-template>
                                 <xsl:value-of select="b:DayAccessed"/>
+                                <xsl:call-template name ="templ_prop_Dot"/>
                                 <xsl:call-template name ="templ_prop_Space"/>
                                 <xsl:value-of select="b:MonthAccessed"/>
                                 <xsl:call-template name ="templ_prop_Space"/>
@@ -7033,7 +6970,6 @@
                     </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:call-template name ="templ_prop_Dot"/>
         </xsl:if>
     </xsl:template>
 
@@ -7144,12 +7080,10 @@
             <xsl:value-of select="count(b:Title)"/>
         </xsl:variable>
         <xsl:if test ="$cTitle!=0">
-            <xsl:call-template name="templ_prop_OpenQuote"/>
             <xsl:call-template name="right-trim">
                 <xsl:with-param name ="s" select="b:Title"/>
             </xsl:call-template>
-            <xsl:call-template name ="List_Separator_NoSpace"/>
-            <xsl:call-template name="templ_prop_CloseQuote"/>
+            <xsl:call-template name ="templ_prop_Dot"/>
             <xsl:call-template name ="templ_prop_Space"/>
         </xsl:if>
     </xsl:template>
@@ -7222,10 +7156,7 @@
             <xsl:value-of select="count(b:URL)"/>
         </xsl:variable>
         <xsl:if test ="$cURL!=0">
-            <xsl:text>Available:</xsl:text>
-            <xsl:call-template name ="templ_prop_Space"/>
             <xsl:value-of select="b:URL"/>
-            <xsl:call-template name ="templ_prop_Dot"/>
         </xsl:if>
     </xsl:template>
 
@@ -7354,8 +7285,8 @@
                             <xsl:value-of select="'1%'"/>
                         </xsl:attribute>
                         <xsl:element name="p">
-                            <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibAddParagraphAttributes"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7366,21 +7297,21 @@
                             <xsl:value-of select="'top'"/>
                         </xsl:attribute>
                         <xsl:element name="p">
-                            <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name ="BibDisplayAuthorBook">
-                                <xsl:with-param name ="DisplayEditorIfAuthorUnavailale" select="'true'" />
+                            <xsl:call-template name="BibAddParagraphAttributes"/>
+                            <xsl:call-template name="BibDisplayAuthorBook">
+                                <xsl:with-param name="DisplayEditorIfAuthorUnavailale" select="'true'" />
                             </xsl:call-template>
-                            <xsl:call-template name = "BibDisplayTitleBook"/>
-                            <xsl:call-template name = "BibDisplayEdition"/>
+                            <xsl:call-template name="BibDisplayTitle"/>
+                            <xsl:call-template name="BibDisplayEdition"/>
                             <xsl:call-template name="BibDisplayVolumeBook"/>
                             <xsl:call-template name="BibDisplayEditorBook"/>
 
-                            <xsl:call-template name = "BibDisplayCity"/>
-                            <xsl:call-template name = "BibDisplayStateProvinceBook"/>
+                            <xsl:call-template name="BibDisplayCity"/>
+                            <xsl:call-template name="BibDisplayStateProvinceBook"/>
 
-                            <xsl:call-template name = "BibDisplayPublisherBC"/>
-                            <xsl:call-template name = "BibDisplayYearBC"/>
-                            <xsl:call-template name ="BibDisplayPages"/>
+                            <xsl:call-template name="BibDisplayPublisherBC"/>
+                            <xsl:call-template name="BibDisplayYearBC"/>
+                            <xsl:call-template name="BibDisplayPages"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -7396,7 +7327,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7437,7 +7368,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7448,14 +7379,13 @@
                             <xsl:value-of select="'top'"/>
                         </xsl:attribute>
                         <xsl:element name="p">
-                            <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name = "BibDisplayAuthorWebsite"/>
-                            <xsl:call-template name ="BibDisplayTitleWebSite"/>
-                            <xsl:call-template name ="BibDisplayProductionCompanywebsite"/>
-                            <xsl:call-template name = "BibDisplayDayMonthYearWebSiteJournal"/>
-                            <xsl:call-template name ="BibDisplayStrOnline"/>
-                            <xsl:call-template name ="BibDisplayURL"/>
-                            <xsl:call-template name ="BibDisplayAccessedDates"/>
+                            <xsl:call-template name="BibAddParagraphAttributes"/>
+                            <xsl:call-template name="BibDisplayAuthorWebsite"/>
+                            <xsl:call-template name="BibDisplayTitleWebSite"/>
+                            <xsl:call-template name="BibDisplayProductionCompanywebsite"/>
+                            <xsl:call-template name="BibDisplayDayMonthYearWebSiteJournal"/>
+                            <xsl:call-template name="BibDisplayURL"/>
+                            <xsl:call-template name="BibDisplayAccessedDates"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -7472,7 +7402,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7511,7 +7441,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7550,7 +7480,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7583,7 +7513,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7616,7 +7546,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7651,7 +7581,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7686,7 +7616,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7721,7 +7651,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7732,14 +7662,13 @@
                             <xsl:value-of select="'top'"/>
                         </xsl:attribute>
                         <xsl:element name="p">
-                            <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name = "BibDisplayAuthorWebsite"/>
-                            <xsl:call-template name ="BibDisplayTitleWebSite"/>
-                            <xsl:call-template name ="BibDisplayProductionCompanywebsite"/>
-                            <xsl:call-template name = "BibDisplayDayMonthYearWebSiteJournal"/>
-                            <xsl:call-template name ="BibDisplayStrOnline"/>
-                            <xsl:call-template name ="BibDisplayURL"/>
-                            <xsl:call-template name ="BibDisplayAccessedDates"/>
+                            <xsl:call-template name="BibAddParagraphAttributes"/>
+                            <xsl:call-template name="BibDisplayAuthorWebsite"/>
+                            <xsl:call-template name="BibDisplayTitleWebSite"/>
+                            <xsl:call-template name="BibDisplayProductionCompanywebsite"/>
+                            <xsl:call-template name="BibDisplayDayMonthYearWebSiteJournal"/>
+                            <xsl:call-template name="BibDisplayURL"/>
+                            <xsl:call-template name="BibDisplayAccessedDates"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
@@ -7757,7 +7686,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7791,7 +7720,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7824,7 +7753,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7860,7 +7789,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7892,7 +7821,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7925,7 +7854,7 @@
                         </xsl:attribute>
                         <xsl:element name="p">
                             <xsl:call-template name = "BibAddParagraphAttributes"/>
-                            <xsl:call-template name="BibRefOrder"/>
+                            <xsl:call-template name="BibRefTag"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="td">
@@ -7941,7 +7870,7 @@
                                 <xsl:with-param name ="DisplayEditorIfAuthorUnavailale" select="'true'" />
                             </xsl:call-template>
                             <i>
-                                <xsl:call-template name = "BibDisplayTitleBook"/>
+                                <xsl:call-template name = "BibDisplayTitle"/>
                             </i>
                             <xsl:call-template name = "BibDisplayEdition"/>
                             <xsl:call-template name="BibDisplayVolumeBook"/>
@@ -7981,7 +7910,7 @@
                     </xsl:attribute>
                     <xsl:for-each select ="b:Bibliography">
                         <xsl:apply-templates select="b:Source">
-                            <xsl:sort select="b:RefOrder" order="ascending" data-type="number"/>
+                            <xsl:sort select="b:Tag" order="ascending" data-type="text"/>
                         </xsl:apply-templates>
                     </xsl:for-each>
                 </xsl:element>
@@ -7990,13 +7919,13 @@
     </xsl:template>
 
 
-    <xsl:template name="RefOrder">
-        <xsl:value-of select="b:Source/b:RefOrder"/>
+    <xsl:template name="RefTag">
+        <xsl:value-of select="b:Source/b:Tag"/>
     </xsl:template>
 
-    <xsl:template name="BibRefOrder">
+    <xsl:template name="BibRefTag">
         <xsl:call-template name ="templ_prop_SecondaryOpen"/>
-        <xsl:value-of select="b:RefOrder"/>
+        <xsl:value-of select="b:Tag"/>
         <xsl:call-template name="templ_prop_SecondaryClose"/>
         <xsl:call-template name ="templ_prop_Space"/>
     </xsl:template>
@@ -8062,7 +7991,7 @@
                                 <xsl:call-template name ="templ_prop_SecondaryOpen"/>
                             </xsl:if>
 
-                            <xsl:call-template  name="RefOrder"/>
+                            <xsl:call-template name="RefTag"/>
 
                             <xsl:if test="count(b:Pages)>0">
                                 <xsl:call-template name="displayPageOrPages" >
