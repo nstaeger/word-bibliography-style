@@ -12,152 +12,31 @@
     <xsl:template name="Start">
         <xsl:choose>
             <xsl:when test="b:Version">
-                <xsl:text>2010.2.02</xsl:text>
+                <xsl:text>2016.05.07</xsl:text>
             </xsl:when>
 
             <xsl:when test="b:XslVersion">
-                <xsl:text>2006</xsl:text>
+                <xsl:text>2016</xsl:text>
             </xsl:when>
+
             <xsl:when test="b:StyleNameLocalized">
                 <xsl:choose>
                     <xsl:when test="b:StyleNameLocalized/b:Lcid='1033'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1025'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1037'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1041'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='2052'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1028'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1042'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1036'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1040'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='3082'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1043'">
-                        <xsl:text>IEEE</xsl:text>
+                        <xsl:text>nstaeger</xsl:text>
                     </xsl:when>
                     <xsl:when test="b:StyleNameLocalized/b:Lcid='1031'">
-                        <xsl:text>IEEE</xsl:text>
+                        <xsl:text>nstaeger</xsl:text>
                     </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1046'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1049'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1035'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1032'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1081'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1054'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1057'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1086'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1066'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1053'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1069'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1027'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1030'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1110'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1044'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1061'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1062'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1063'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1045'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='2070'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1029'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1055'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1038'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1048'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1058'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1026'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1050'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1087'">
-                        <xsl:text>Электр және электроника инженерлері институты</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='2074'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='3098'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1051'">
-                        <xsl:text>IEEE</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="b:StyleNameLocalized/b:Lcid='1060'">
-                        <xsl:text>Način citiranja IEEE</xsl:text>
-                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>nstaeger</xsl:text>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
 
             <xsl:when test="b:category">
-                <xsl:text>From Office Online</xsl:text>
+                <xsl:text>from Nicolai Stäger</xsl:text>
             </xsl:when>
+
             <xsl:when test="b:GetImportantFields">
                 <b:ImportantFields>
                     <xsl:choose>
@@ -502,16 +381,18 @@
                     </xsl:choose>
                 </b:ImportantFields>
             </xsl:when>
+
             <xsl:when test="b:Bibliography">
                 <xsl:call-template name="Bibliography"/>
             </xsl:when>
+
             <xsl:when test="b:Citation">
                 <xsl:call-template name="Citation"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template name ="Entry">
+    <xsl:template name="Entry">
         <xsl:call-template name="Start"/>
     </xsl:template>
 
