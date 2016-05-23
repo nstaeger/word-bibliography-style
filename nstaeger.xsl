@@ -5891,8 +5891,8 @@
             </xsl:call-template>
             <xsl:choose>
                 <xsl:when test=" $cCity!=0 or $cYear!=0 or  $cPublisher!=0  ">
-                    <xsl:call-template name ="List_Separator_NoSpace"/>
                     <xsl:call-template name="templ_prop_CloseQuote"/>
+                    <xsl:call-template name = "templ_prop_Dot"/>
                     <xsl:call-template name ="templ_prop_Space"/>
                 </xsl:when>
                 <xsl:when test="$cCity=0 and $cYear=0 and $cPublisher=0 ">
