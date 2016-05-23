@@ -5673,7 +5673,7 @@
                         <xsl:value-of select="b:Author/b:Author/b:Corporate"/>
                         <xsl:choose>
                             <xsl:when test="$cTitle!=0 or $cCity!=0 or $cPublisher!=0 or $cYear!=0">
-                                <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                <xsl:call-template name ="templ_prop_EnumSeparator"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name ="templ_prop_Dot"/>
@@ -5752,7 +5752,7 @@
                             <xsl:value-of select="b:Last"/>
                             <xsl:choose>
                                 <xsl:when test="$cTitle!=0 or $cCity!=0 or $cPublisher!=0 or $cYear!=0">
-                                    <xsl:call-template name ="templ_prop_ListSeparator"/>
+                                    <xsl:call-template name ="templ_prop_EnumSeparator"/>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:call-template name ="templ_prop_Dot"/>
@@ -5847,7 +5847,7 @@
                 </xsl:for-each>
                 <xsl:choose>
                     <xsl:when test="$cTitle!=0 or $cCity!=0 or $cPublisher!=0 or $cYear!=0">
-                        <xsl:call-template name ="templ_prop_ListSeparator"/>
+                        <xsl:call-template name ="templ_prop_EnumSeparator"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:call-template name ="templ_prop_Dot"/>
